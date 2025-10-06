@@ -15,7 +15,7 @@ const optionalAuth = require('./middleware/auth');
 const app = express();
 // Allow Authorization header from the frontend and enable credentials for cookies if needed
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://your-frontend-name.vercel.app',
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
